@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 ip l2tp add tunnel tunnel_id 1000 peer_tunnel_id 2000 \
               encap udp local 10.10.1.10 remote 10.10.1.20 \
-              udp_sport 6000 udp_port 5000
+              udp_sport 6000 udp_rport 5000
 ip l2tp add session tunnel_id 1000 session_id 3000 \
               peer_session_id 4000
 
