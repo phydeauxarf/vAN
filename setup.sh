@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 modprobe l2tp_eth
 apt-get update
-apt-get install bridge-utils git dnsutils -y
+# bridge-util package to enable interface bridging  dnsutils to install nslookup
+apt-get install bridge-utils dnsutils -y
